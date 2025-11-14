@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width,initial-scale=1"/>
+  <title>Sumber Inspirasi — Dewa</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="wrap">
+      <h1>Dewa — Sumber Inspirasi</h1>
+      <p class="tag">Musik • Video • Sosial • AI Sederhana</p>
+    </div>
+  </header>
+
+  <main class="wrap grid">
+    <section class="card player">
+      <h2>🎵 Mini YouTube Player</h2>
+      <iframe id="ytFrame" src="https://www.youtube.com/embed/dQw4w9WgXcQ" frameborder="0" allowfullscreen></iframe>
+      <div class="controls">
+        <button id="randBtn">Random Lagu</button>
+        <select id="playlist"></select>
+      </div>
+      <div class="yt-search">
+        <input id="ytQuery" placeholder="Cari video YouTube...">
+        <button id="ytSearchBtn">Cari di YouTube</button>
+      </div>
+    </section>
+
+    <section class="card feeds">
+      <h2>📱 Instagram / TikTok Embed</h2>
+      <p>Tempelkan URL atau embed code di bawah, lalu tekan Tampilkan.</p>
+      <textarea id="embedInput" placeholder="https://www.tiktok.com/... or <iframe ...>"></textarea>
+      <div><button id="showEmbed">Tampilkan</button></div>
+      <div id="embedOut" class="embedOut"></div>
+    </section>
+
+    <section class="card search">
+      <h2>🔎 Google Mini</h2>
+      <form id="gform" action="https://www.google.com/search" method="GET" target="_blank">
+        <input name="q" placeholder="Cari di Google..." />
+        <button type="submit">Cari</button>
+      </form>
+
+      <h2 style="margin-top:18px">🤖 AI Mini (Demo)</h2>
+      <textarea id="aiInput" placeholder="Tanyakan sesuatu..."></textarea>
+      <div><button id="aiBtn">Kirim</button></div>
+      <div id="aiOut" class="aiOut"></div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap">
+      <small>© 2025 Dewa — Sumber Inspirasi. Static demo-ready for Render.</small>
+    </div>
+  </footer>
+
+<script src="script.js"></script>
+</body>
+</html>

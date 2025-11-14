@@ -1,0 +1,7 @@
+# Render static site settings (no build)
+services:
+  - type: static
+    name: sumber-inspirasi-dewa
+    env: static
+    buildCommand: ""
+    publishPath: "."
